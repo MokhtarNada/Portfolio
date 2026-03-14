@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolio | Mokhtar Fawzy</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=DM+Sans:wght@300;400;500&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+  <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+  </script>
+  <script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "pN8nfzF4uXT7nWAQW",
+      });
+   })();
+  </script>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<a href="#hero" id="btt" aria-label="Back to top">↑</a>
+<div class="mobile-nav" id="mobileNav">
+  <a href="#about" onclick="closeNav()">About</a>
+  <a href="#education" onclick="closeNav()">Education</a>
+  <a href="#skills" onclick="closeNav()">Skills</a>
+  <a href="#services" onclick="closeNav()">Services</a>
+  <a href="#projects" onclick="closeNav()">Work</a>
+  <a href="#achievements" onclick="closeNav()">Awards</a>
+  <a href="#contact" onclick="closeNav()">Contact</a>
+</div>
+<nav id="navbar">
+  <div class="nav-logo">Mokhtar Fawzy.</div>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#education">Education</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#projects">Work</a></li>
+    <li><a href="#achievements">Awards</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <button class="menu-btn" id="menuBtn" aria-label="Open menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+<section id="hero">
+  <div class="hero-content">
+    <div class="hero-tag">Available for work</div>
+    <h1 class="hero-name">
+      Mokhtar<br/><span>Fawzy AbdElSabour Nada</span>
+    </h1>
+    <p class="hero-subtitle">
+      FullStack .NET Developer, Bridging the gap between complex business logic and seamless user experiences.
+    </p>
+    <div class="hero-btns flex flex-wrap gap-4">
+      <a href="#projects" class="btn-primary">View My Work →</a>
+      <a href="#contact"  class="btn-outline">Get In Touch</a>
+    </div>
+  </div>
+  <div class="hero-photo-wrap reveal">
+    <div class="hero-photo-frame">
+      <img class="hero-photo" src="./assets/img/pfp.jpeg" alt="Mokhtar Fawzy" />
+    </div>
+  </div>
+</section>
+<section id="about">
+  <div class="section-label">About Me</div>
+  <div class="about-grid">
+    <div class="about-text reveal">
+      <h2 class="section-heading">The story<br/>behind the <em>work.</em></h2>
+      <p>
+        Hello! I'm <strong style="color:var(--text)">Mokhtar Fawzy AbdElSabour Nada</strong>, I help small and medium businesses build scalable and secure web 
+        applications using ASP.NET, turning their ideas into practical, growth
+        ready solutions.
+      </p>
+      <p>
+        My journey began with a fascination for breaking down complex systems into their smallest moving parts. What started as curiosity about how software "thinks" evolved into a career built on continuous learning, architectural integrity, and a deep respect for the people I create for.
+      </p>
+      <p>
+        When I'm not optimizing database queries or refactoring C# logic, you’ll find me exploring open-source repositories, Gaming, or Cooking.
+      </p>
+      <div class="mt-8 flex gap-4 flex-wrap">
+        <a href="#contact" class="btn-primary">Let's Work Together →</a>
+      </div>
+    </div>
+    <div class="about-stats reveal reveal-delay-2">
+      <div class="stat-card">
+        <div class="stat-num">6+</div>
+        <div class="stat-label">Months Experience</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-num">4+</div>
+        <div class="stat-label">Projects Completed</div>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="education">
+  <div class="section-label">Education</div>
+  <h2 class="section-heading reveal">Academic<br/><em>foundations.</em></h2>
+  <div class="timeline">
+    <div class="timeline-item reveal">
+      <div class="edu-year">2022 — 2026</div>
+      <div class="edu-degree">Bachelor of Science in Mathematics and Computer Science</div>
+      <div class="edu-school">Menofia University · Menofia, Egypt</div>
+      <div class="edu-desc">
+        Focused on Mathematical and Numerical Analysis, OOP, Data Structures. Graduated with 3.62.
+      </div>
+    </div>
+    <div class="timeline-item reveal">
+      <div class="edu-year">2025</div>
+      <div class="edu-degree">Attendence Certification in Web Development Using .Net</div>
+      <div class="edu-school">Information Technology Institute (ITI)</div>
+      <div class="edu-desc">
+        Focused on SQL Server, C#, Entity Framework, ASP.NET MVC. 160hrs.
+      </div>
+    </div>
+  </div>
+</section>
+<section id="skills">
+  <div class="section-label">Skills</div>
+  <h2 class="section-heading reveal">Tools &<br/><em>expertise.</em></h2>
+
+  <div class="skills-grid">
+    <div class="skill-item reveal">
+      <i class="devicon-html5-plain colored"></i>
+      <div class="skill-name">HTML</div>
+    </div>
+    <div class="skill-item reveal">
+      <i class="devicon-css3-plain colored"></i>
+      <div class="skill-name">CSS</div>
+    </div>
+    <div class="skill-item reveal">
+      <i class="devicon-javascript-plain colored"></i>
+      <div class="skill-name">JS</div>
+    </div>
+    <div class="skill-item reveal">
+      <i class="devicon-tailwindcss-plain colored"></i>
+      <div class="skill-name">Tailwindcss</div>
+    </div>
+    <div class="skill-item reveal">
+      <i class="devicon-csharp-plain colored"></i>
+      <div class="skill-name">C#</div>
+    </div>
+    <div class="skill-item reveal">
+      <i class="devicon-dotnetcore-plain colored"></i>
+      <div class="skill-name">Entity Framework</div>
+    </div>
+    <div class="skill-item reveal">
+      <i class="devicon-dot-net-plain colored"></i>
+      <div class="skill-name">ASP.NET MVC</div>
+    </div>
+    <div class="skill-item reveal">
+      <i class="devicon-dot-net-plain colored"></i>
+      <div class="skill-name">ASP.NET Web API</div>
+    </div>
+    <div class="skill-item reveal">
+      <i class="devicon-microsoftsqlserver-plain colored"></i>
+      <div class="skill-name">SQL Server</div>
+    </div>
+  </div>
+</section>
+<section id="services">
+  <div class="section-label">What I Offer</div>
+  <h2 class="section-heading reveal">Services built<br/>for <em>real results.</em></h2>
+  <div class="services-grid">
+    <div class="service-card reveal">
+      <div class="service-icon">✦</div>
+      <div class="service-title">Full-Stack Web Development</div>
+      <div class="service-desc">Building end-to-end web applications that are as fast as they are functional. I handle everything from responsive UI design to secure, scalable backend architectures.</div>
+    </div>
+    <div class="service-card reveal reveal-delay-1">
+      <div class="service-icon">◈</div>
+      <div class="service-title">Custom API Design & Integration</div>
+      <div class="service-desc">Creating the "bridge" that allows your data to move securely. I design and implement RESTful APIs that are well-documented, easy to consume, and built for high-performance data exchange.</div>
+    </div>
+    <div class="service-card reveal reveal-delay-2">
+      <div class="service-icon">⬡</div>
+      <div class="service-title">Database Architecture & Optimization</div>
+      <div class="service-desc">A product is only as good as its data. I design relational database schemas focused on integrity and performance, ensuring your application stays fast as your user base grows.</div>
+    </div>
+</section>
+<section id="projects">
+  <div class="section-label">Previous Work</div>
+  <h2 class="section-heading reveal">Selected<br/><em>projects.</em></h2>
+
+  <div class="projects-grid">
+    <div class="project-card reveal">
+      <div class="project-thumb">
+        <img src="assets/img/Sprentizers.png" alt="Sprentizers" />
+      </div>
+      <div class="project-body">
+        <div class="project-tag">E-Commerce · 2025</div>
+        <div class="project-title">Sprentizers - E-Commerce</div>
+        <div class="project-desc">E-Commerce Project, Created using ASP.NET MVC applying CRUD operations, authentication and authorization.</div>
+      </div>
+    </div>
+    <div class="project-card reveal reveal-delay-1">
+      <div class="project-thumb">
+        <img src="assets/img/Archive.png" alt="Sprentizers" />
+      </div>
+      <div class="project-body">
+        <div class="project-tag">Archive · 2026</div>
+        <div class="project-title">Archive System</div>
+        <div class="project-desc">Archive documents online instead of physical archives is the future."</div>
+      </div>
+    </div>
+    <div class="project-card reveal reveal-delay-2">
+      <div class="project-thumb">
+        <img src="assets/img/Green.png" alt="Sprentizers" />
+      </div>
+      <div class="project-body">
+        <div class="project-tag">Web Design · 2026</div>
+        <div class="project-title">Green Design</div>
+        <div class="project-desc">Green friendly designs can make people feel comfortable.</div>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="achievements">
+  <div class="section-label">Achievements</div>
+  <h2 class="section-heading reveal">Awards &<br/><em>recognition.</em></h2>
+
+  <div class="achievements-grid">
+    <div class="achievement-card reveal">
+      <div class="ach-icon">🏆</div>
+      <div>
+        <div class="ach-year">2026</div>
+        <div class="ach-title">FullStack .Net Web Development</div>
+        <div class="ach-issuer">Digital Egypt Pioneers Initiative (DEPI)</div>
+      </div>
+    </div>
+    <div class="achievement-card reveal reveal-delay-1">
+      <div class="ach-icon">🎖</div>
+      <div>
+        <div class="ach-year">2025</div>
+        <div class="ach-title">Web Development Using .Net</div>
+        <div class="ach-issuer">Information Technology Institute (ITI)</div>
+      </div>
+    </div>
+  </div>
+  <div class="cert-section reveal mt-10">
+    <div class="cert-label">Certificate Preview</div>
+    <img src="assets/img/certificate.png" style="width:100%;max-height:400px;object-fit:contain;" />
+  </div>
+</section>
+<!-- <section id="testimonials">
+  <div class="section-label">Testimonials</div>
+  <h2 class="section-heading reveal">Words from<br/><em>clients.</em></h2>
+
+  <div class="testimonials-grid">
+    <div class="testi-card reveal">
+      <div class="testi-quote">"</div>
+      <div class="stars">★★★★★</div>
+      <div class="testi-text">
+        Working with Mokhtar was an absolute pleasure. They delivered beyond our expectations — on time, within budget, and with an attention to detail that set the project apart. I'd recommend them without hesitation.
+      </div>
+      <div class="testi-author">
+        <div class="testi-avatar">A</div>
+        <div>
+          <div class="testi-name">Alex Johnson</div>
+        </div>
+      </div>
+    </div>
+    <div class="testi-card reveal reveal-delay-1">
+      <div class="testi-quote">"</div>
+      <div class="stars">★★★★★</div>
+      <div class="testi-text">
+        Mokhtar's ability to translate our vague ideas into a polished, functional product is remarkable. The communication was clear throughout, and the final deliverable exceeded everything we hoped for.
+      </div>
+      <div class="testi-author">
+        <div class="testi-avatar">S</div>
+        <div>
+          <div class="testi-name">Sara Mitchell</div>
+        </div>
+      </div>
+    </div>
+    <div class="testi-card reveal reveal-delay-2">
+      <div class="testi-quote">"</div>
+      <div class="stars">★★★★★</div>
+      <div class="testi-text">
+        Genuinely one of the most talented professionals I've had the privilege of collaborating with. Strategic thinking, creative execution, and rock-solid reliability. A rare combination.
+      </div>
+      <div class="testi-author">
+        <div class="testi-avatar">R</div>
+        <div>
+          <div class="testi-name">Ryan Patel</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section> -->
+<section id="contact">
+  <div id="cta">
+    <div class="section-label" style="justify-content:center">Let's Connect</div>
+    <h2 class="cta-heading reveal">Ready to start<br/>something <em>great?</em></h2>
+    <p class="cta-sub reveal reveal-delay-1">Whether you have a project in mind, a question to ask, or just want to say hello — my inbox is always open.</p>
+  </div>
+
+  <div class="contact-grid reveal">
+    <div class="contact-form-group">
+      <input class="contact-input"    type="text"  placeholder="Your full name" />
+      <input class="contact-input"    type="email" placeholder="Email address" />
+      <input class="contact-input"    type="text"  placeholder="Subject" />
+      <textarea class="contact-textarea" rows="5"  placeholder="Tell me about your project…"></textarea>
+      <button class="btn-primary" style="align-self:flex-start" onclick="handleSend(event)">Send Message →</button>
+    </div>
+
+    <div class="contact-info-list">
+      <div class="contact-info-item">
+        <div class="contact-info-icon">✉</div>
+        <div>
+          <div class="contact-info-label">Email</div>
+          <div class="contact-info-val">mokhtarfawzi590@gmail.com</div>
+        </div>
+      </div>
+      <div class="contact-info-item">
+        <div class="contact-info-icon">📞</div>
+        <div>
+          <div class="contact-info-label">Phone</div>
+          <div class="contact-info-val">+20 1003060582</div>
+        </div>
+      </div>
+      <div class="contact-info-item">
+        <div class="contact-info-icon">📍</div>
+        <div>
+          <div class="contact-info-label">Location</div>
+          <div class="contact-info-val">Menofia, Egypt</div>
+        </div>
+      </div>
+      <div class="contact-info-item">
+        <div class="contact-info-icon">🔗</div>
+        <div>
+          <div class="contact-info-label">LinkedIn</div>
+          <div class="contact-info-val"><a href="https://www.linkedin.com/in/mokhtar-fawzy/">https://www.linkedin.com/in/mokhtar-fawzy/</a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="thankyou">
+  <div class="ty-big">Thank You</div>
+  <p class="ty-msg">For taking the time to get to know my work. Every great project begins with a single conversation.</p>
+</section>
+<footer>
+  <p>© 2026 Mokhtar Fawzy AbdElSabour Nada · All rights reserved.</p>
+  <div class="social-links">
+    <a href="https://www.linkedin.com/in/mokhtar-fawzy/" title="LinkedIn">in</a>
+    <a href="https://github.com/MokhtarNada" title="GitHub">gh</a>
+  </div>
+</footer>
+<script>
+  const navbar = document.getElementById('navbar');
+  const btt    = document.getElementById('btt');
+  window.addEventListener('scroll', () => {
+    navbar.classList.toggle('scrolled', window.scrollY > 40);
+    btt.classList.toggle('visible', window.scrollY > 400);
+  });
+  const menuBtn   = document.getElementById('menuBtn');
+  const mobileNav = document.getElementById('mobileNav');
+  menuBtn.addEventListener('click', () => mobileNav.classList.toggle('open'));
+  function closeNav() { mobileNav.classList.remove('open'); }
+  const revealEls = document.querySelectorAll('.reveal');
+  const skillBars  = document.querySelectorAll('.skill-bar-fill');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.classList.add('visible');
+        observer.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.12 });
+  revealEls.forEach(el => observer.observe(el));
+  const barObserver = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.classList.add('animated');
+        barObserver.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.3 });
+  skillBars.forEach(b => barObserver.observe(b));
+  function handleSend(e) {
+    e.preventDefault();
+    const btn = e.target;
+    btn.textContent = 'Message Sent ✓';
+    btn.style.background = '#059669';
+    setTimeout(() => { btn.textContent = 'Send Message →'; btn.style.background = ''; }, 3500);
+  }
+  const sections  = document.querySelectorAll('section[id]');
+  const navAnchors = document.querySelectorAll('.nav-links a');
+  const spy = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        navAnchors.forEach(a => {
+          a.style.color = a.getAttribute('href') === '#' + e.target.id ? 'var(--gold)' : '';
+        });
+      }
+    });
+  }, { rootMargin: '-40% 0px -55% 0px' });
+  sections.forEach(s => spy.observe(s));
+</script>
+</body>
+</html>
